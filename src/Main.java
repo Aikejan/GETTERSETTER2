@@ -17,10 +17,12 @@ public class Main {
         city.setNationality("Кыргыз");
 
 
+
+
         Adress adress = new Adress();
         adress.setCity("Бишкек");
         adress.setStreet("Арашан");
-        adress.setStreet(" дом 6 квартира 77");
+        adress.setHouse(" дом 6 квартира 77");
 
         Parson parson = new Parson();
         parson.setFirstName("Айкежан");
@@ -28,11 +30,28 @@ public class Main {
         parson.setYear(LocalDate.of(1977, 2,7));
         parson.setProfessional("Программист");
 
-        System.out.println(country.getName() + " " + country.getNamepeple() + " " + country.getPopulation() + " " + country.getOrigin());
+        Parson parson1 = new Parson();
+        parson1.setFirstName("Samat");
+        parson1.setLastName("Chegirov");
+        parson1.setYear(LocalDate.of(1982,3,5));
+        parson1.setProfessional("Programmist");
+
+        Parson parson2 = new Parson();
+        parson2.setFirstName("Olga");
+        parson2.setLastName(" Kulikova");
+        parson2.setYear(LocalDate.of(1980,4,5));
+        parson2.setProfessional("Povar");
+
+        Parson[] parsons = { parson,parson1,parson2};
+
+        for (Parson s:parsons){
+            System.out.println(s.getFirstName() + " " + s.getLastName() + " " + s.getYear() + " " + s.getProfessional());
+        System.out.println(country.getName() + " " +country.getNamepeple() + " " + country.getPopulation() + " " + country.getOrigin());
         System.out.println(adress.getCity() + " " + adress.getStreet() + " " + adress.getHouse());
-        System.out.println(parson.getFirstName() + " " + parson.getLastName() + " " + parson.getYear() + " " + parson.getProfessional());
+
     }
 }
+    }
 
 
 //            Company company = new Company();
