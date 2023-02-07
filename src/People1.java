@@ -1,18 +1,18 @@
 import java.time.LocalDate;
 
-public class Personn {
-    String firstname;
-    String lastname;
-    long cardnumber;
-    LocalDate ofbirth;
+public class People1 {
 
+   private String ferstname;
+    private String lastname;
+    private long cardnumber;
+    private  LocalDate ofbirth;
 
-    public String getFirstname() {
-        return firstname;
+    public String getFerstname() {
+        return ferstname;
     }
 
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
+    public void setFerstname(String ferstname) {
+        this.ferstname = ferstname;
     }
 
     public String getLastname() {
